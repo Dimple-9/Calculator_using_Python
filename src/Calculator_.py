@@ -1,12 +1,10 @@
 import math
 
-
 def addition(a, b):
     a = int(a)
     b = int(b)
     c = a + b
     return c
-
 
 def subtraction(a, b):
     a = int(a)
@@ -14,13 +12,11 @@ def subtraction(a, b):
     c = b - a
     return c
 
-
 def multiplication(a, b):
     a = int(a)
     b = int(b)
     c = a * b
     return c
-
 
 def division(a, b):
     a = int(a)
@@ -28,14 +24,12 @@ def division(a, b):
     c = float(b / a)
     return c
 
-
 def square(a):
     a = int(a)
     c = a * a
     return c
 
-
-def sqrt(a):
+def sqroot(a):
     a = int(a)
     c = round(math.sqrt(a), 7)
     return c
@@ -43,6 +37,9 @@ def sqrt(a):
 
 class Calculator:
     result = 0
+
+
+
 
     def __init__(self):
         pass
@@ -68,5 +65,5 @@ class Calculator:
         return self.result
 
     def square_root(self, a):
-        self.result = sqrt(a)
+        self.result = sqroot(a)
         return self.result
